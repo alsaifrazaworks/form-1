@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family : 'poppins',sans sherif;
+}
+
+body:has(#login:target) .popup {
+    display: none;
+}
+
+
+.popup {
+  background: #092328;
+  font-size: 72px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  position: relative;
+  top: 100px;
+  
+}
+
+#login {
+      display:none;
+}
+
+#login:target {
+     display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+
+.form-box {
+    width: 600px;
+    min-height: 700px;
+
+    margin-top: 90px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    
+    background: #092328;
+    color: white;
+
+    border-radius: 30px;
+    
+}
+
+h2 {
+    position: relative ;
+    top: 50px;
+    left: 25px;
+}
+
+strong {
+    font-size: 68px;
+    padding-top: 30px;
+    position: relative ;
+    bottom: 30px;
+    color: #8BBB92;
+}
+     
+.form-content {
+   z-index: 9999;
+   
+   height: 500px;
+ 
+   position: relative;
+   top: 20px;
+  
+   background: #12544F;
+   
+   display: flex;
+   border-radius: 30px;
+   margin: 30px 10px;
+   font-size: 24px;
+
+}
+
+#form-box {      
+         margin-left: 20px;
+         margin-top:20px;
+
+}
+
+label, input {
+      font-size: 30px;
+}
+
+
+input {
+     border: none;
+
+     font-size: 26px;
+     padding:10px;
+     border-radius: 10px;
+
+     background: #2A835F;
+
+    outline: none;
+
+     
+}
+
+input::placeholder {
+    color: #8BBB92;
+}
+
+
+.login-btn {
+    display: inline-block;
+    border: none;
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    left: 400px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #092328;
+    color: white;
+}
+
+.close-btn {
+  width: 30px;
+  position: relative;
+  left: 520px;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  background: #12544F;
+  padding: 8px 15px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
